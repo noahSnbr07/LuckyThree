@@ -1,0 +1,20 @@
+.start-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & a {
+        color: inherit;
+        font-size: 2rem;
+        background-color: var(--overlay);
+        padding: 20px 40px;
+        border-radius: var(--border-radius);
+        font-weight: 900;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
