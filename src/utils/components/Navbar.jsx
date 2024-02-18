@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/navbar.css';
 import { BalanceContext, IntermediateValueContext } from '../../App';
@@ -11,8 +11,8 @@ export default function Navbar() {
         <nav className='navbar'>
             <Link to={'/'}> Lucky Three </Link>
             <div>
-                <p> Bal.: ${balance} </p>
-                <p> Int.: $ {intermediateValue} </p>
+                <p> 💰:${balance} </p>
+                <p> 📋 $ {intermediateValue} </p>
             </div>
         </nav>
     );

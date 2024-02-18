@@ -37,13 +37,13 @@ export default function Game() {
 
     const flipCard = (index) => {
         const card = cards[index];
-        if (!isBlocked) {
+        if (!isBlocked && balance >= 1) {
             setCards(prevCards => {
                 const updatedCards = [...prevCards];
                 updatedCards[index] = { ...updatedCards[index], isFlipped: !updatedCards[index].isFlipped };
                 return updatedCards;
             });
-        }
+        } else { return; }
         //incorrect guess
         if (!card.isPrize) {
             setBlocked(true);
@@ -72,7 +72,7 @@ export default function Game() {
                 {cards[index].isFlipped ? (
                     <>
                         <p
-                            style={{ color: cards[index].isPrize ? 'green' : 'red' }}>
+                            style={{ fontWeight: 900, color: cards[index].isPrize ? 'white' : 'red' }}>
                             {cards[index].isPrize ? 'Won' : 'Lost'}
                         </p>
                     </>

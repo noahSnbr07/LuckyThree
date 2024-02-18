@@ -1,7 +1,8 @@
 :root {
     font-size: 16px;
     --border-radius: 12px;
-    --overlay: rgba(127, 127, 127, 0.025);
+    --overlay: rgba(255, 255, 255, 0.2);
+    --bg: #004100;
 }
 
 body,
@@ -10,7 +11,7 @@ html {
     width: 100dvw;
     margin: 0;
     padding: 0;
-    background-color: #051105;
+    background-color: var(--bg);
     color: #ccc;
 }
 

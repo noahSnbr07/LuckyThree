@@ -9,12 +9,15 @@
         color: inherit;
         font-size: 2rem;
         background-color: var(--overlay);
-        padding: 20px 40px;
+        padding: 20px 50px;
+        width: 350px;
+        text-align: center;
         border-radius: var(--border-radius);
         font-weight: 900;
 
         &:hover {
             scale: 1.1;
+            cursor: pointer;
         }
     }
 }
